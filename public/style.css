@@ -1,0 +1,384 @@
+/*Polices, importation*/
+
+@font-face {
+	font-family: 'Jost-Bold';
+	src: url('../font/Jost-700-Bold.ttf')
+  }
+
+@font-face {
+	font-family: 'Nunito-Regular';
+	src: url('../font/Nunito-Regular.ttf')
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost-Bold';
+}
+
+.header {
+    background-color: #98a285;
+    color: #fff;
+    font-family: 'Jost-Bold';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.icons {
+    display: flex;
+}
+
+.icon {
+    margin-right: 10px;
+    max-width: 500px;
+}
+
+.hero-description {
+    text-align: center;
+    color: #fff;
+    padding: 20px; /* Ajoute un peu d'espace autour du texte */
+    font-family: 'Nunito', sans-serif;
+}
+
+.hero-description p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    font-family: 'Nunito-Regular';
+}
+
+.hero-section {
+    position: relative;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    background-color: rgba(0, 0, 0, 0.5); /* Noir transparent */
+    align-items: center; /* Centrage vertical */
+    justify-content: center; /* Centrage horizontal */
+}
+
+.overlay h2,
+.overlay p {
+    color: #fff; /* Assure que la couleur est bien définie en blanc */
+    margin: 0;
+    font-family: 'Jost-Bold';
+}
+
+.overlay h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.overlay p {
+    text-align: center;
+    color: #fff;
+    padding: 20px; /* Ajoute un peu d'espace autour du texte */
+    font-family: 'Nunito-Regular';
+}
+
+/* Titre texte */
+
+.purchase-section {
+    text-align: center;
+    color: #000; /* Couleur noire */
+    padding: 20px;
+    font-family: 'Jost-Bold';
+}
+
+.purchase-section p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.line {
+    width: 50px;
+    height: 1px;
+    background-color: #000; /* Couleur noire */
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.main-section {
+    background-color: #98A285;
+    padding: 50px 0;
+}
+
+.rectangle {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    text-align: center;
+    padding: 20px;
+    background-color:#98A285;
+    color:white;
+    width: 200px;
+    height: 250px;
+    border:none;
+}
+
+.card h3 {
+    font-family: 'Jost-Bold';
+    font-size: 30px;
+}
+
+.card p {
+    margin: 10px 0;
+    white-space: normal;
+    font-size: 15px;
+    font-family: 'Nunito-Regular';
+}
+
+/* Bouton personnaliser */
+
+.custom-button {
+    padding: 15px 30px;
+    background-color: #98A285; /* Rouge */
+    color: #fff; /* Texte en blanc */
+    border: none;
+    border-radius: 30px; /* Forme arrondie */
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition pour l'effet au survol */
+    margin: 0 10px;
+}
+
+.custom-button:hover {
+    background-color: #AF9F8C; /* Nouvelle couleur au survol */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+/* Boutons alignés */
+
+.orange {
+    background-color: #AF9F8C;
+}
+
+.green {
+    background-color: #98A285;
+}
+
+/* rectangle 1*/
+
+.rectangle1 {
+    background-color: #98A285;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.rectangle1 img {
+    max-width: 300px;
+    margin-right: 200px;
+}
+
+.rectangle1 .text-content {
+    color: #ffffff;
+    flex: 1;
+    font-family: 'Nunito-Regular';
+}
+
+.rectangle1 .custom-button {
+    padding: 10px 20px;
+    background-color: #ffffff; 
+    color: #000000; 
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition pour l'effet au survol */
+}
+
+/* rectangle 2*/
+
+.rectangle2 {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    flex-direction: row-reverse; /* Inverser le sens des éléments */
+}
+
+.rectangle2 img {
+    max-width: 300px;
+    margin-left: 200px; /* Ajout d'une marge à gauche pour séparer l'image du texte */
+}
+
+.rectangle2 .text-content {
+    color: #ffffff;
+    flex: 1;
+    font-family: 'Nunito-Regular';
+}
+
+.rectangle2 .custom-button {
+    padding: 10px 20px;
+    background-color: #98A285;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition pour l'effet au survol */
+}
+
+
+/* rectangle 3*/
+
+.rectangle3 {
+    background-color: #98A285;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.rectangle3 img {
+    max-width: 300px;
+    margin-right: 200px;
+}
+
+.rectangle3 .text-content {
+    color: #ffffff; 
+    flex: 1;
+    font-family: 'Nunito-Regular';
+}
+
+.rectangle3 .custom-button {
+    padding: 10px 20px;
+    background-color: #ffffff; 
+    color: #000000; 
+    border: none;
+    border-radius: 20px; 
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition pour l'effet au survol */
+}
+
+/* COMPOSANTS */
+
+.composant1 {
+    max-width:100%;
+}
+
+.composant2 {
+    max-width:100%;
+    margin-top: 40px;
+    margin-bottom:40px;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #98A285; /* Vert */
+    padding: 20px 0;
+}
+
+.footer img {
+    max-width: 100%;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-top img {
+    margin: 0 10px;
+    margin-right: 10px;
+    max-width: 500px;
+}
+
+.separator {
+    border: 1px solid #000000;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.footer-middle {
+    text-align: center;
+}
+
+.footer-logo {
+    max-width: 100px; /* Ajuste la largeur selon tes besoins */
+    margin-top:150px;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons,
+.bottom-icons {
+    display: flex;
+    margin-top: 10px;
+}
+
+.social-icons img,
+.bottom-icons img {
+    margin: 0 10px;
+}
+
+.footer-texts {
+    display: flex;
+    margin: 10px 0;
+}
+
+.footer-texts p {
+    margin: 0 10px;
+    color: #000000; /* Blanc */
+}
+
+
+.container-fluid2 {
+    width: 100%;
+    background-color: #D5D6C4;
+}
